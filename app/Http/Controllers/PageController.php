@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Menu;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -9,6 +10,8 @@ class PageController extends Controller
 
     public function index()
     {
-        return view('pages.main');
+        $menus = Menu::visibility()->order()->get();
+
+        return view('pages.main', compact('menus'));
     }
 }
