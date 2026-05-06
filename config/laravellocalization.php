@@ -5,8 +5,8 @@ return [
     'supportedLocales' => [
         'en'          => ['name' => 'English',                'script' => 'Latn', 'native' => 'English', 'regional' => 'en_GB', 'locale_url' => 'en'],
         'uz'          => ['name' => 'Uzbek (Latin)',          'script' => 'Latn', 'native' => 'oʼzbekcha', 'regional' => 'uz_UZ', 'locale_url' => 'uz'],
-        'kk'          => ['name' => 'Karakalpak',             'script' => 'Cyrl', 'native' => 'Каракалпак тілі', 'regional' => 'kk_KK', 'locale_url' => 'kk'],
-        'ru'          => ['name' => 'Russian',                'script' => 'Cyrl', 'native' => 'русский', 'regional' => 'ru_RU', 'locale_url' => 'ru']
+        'ru'          => ['name' => 'Russian',                'script' => 'Cyrl', 'native' => 'русский', 'regional' => 'ru_RU', 'locale_url' => 'ru'],
+        'kk'          => ['name' => 'Karakalpak',             'script' => 'Cyrl', 'native' => 'Каракалпак тілі', 'regional' => 'kk_KK', 'locale_url' => 'kk']
     ],
 
     // Requires middleware `LaravelSessionRedirect.php`.
@@ -37,12 +37,12 @@ return [
     // If `useAcceptLanguageHeader` is true, then the first time
     // the locale will be determined from browser and redirect to that language.
     // After that, `hideDefaultLocaleInURL` behaves as usual.
-    'hideDefaultLocaleInURL' => true,
+    'hideDefaultLocaleInURL' => false,
 
     // If you want to display the locales in particular order in the language selector you should write the order here.
     //CAUTION: Please consider using the appropriate locale code otherwise it will not work
     //Example: 'localesOrder' => ['es','en'],
-    'localesOrder' => ['en', 'uz', 'kk', 'ru'],
+    'localesOrder' => [],
 
     // If you want to use custom language URL segments like 'at' instead of 'de-AT', you can map them to allow the
     // LanguageNegotiator to assign the desired locales based on HTTP Accept Language Header. For example, if you want
