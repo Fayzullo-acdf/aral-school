@@ -56,8 +56,6 @@
 
     languageLinks.forEach((link) => {
         link.addEventListener("click", (event) => {
-            event.preventDefault();
-
             const selectedLanguage = link.textContent.trim();
 
             languageLinks.forEach((item) => {
