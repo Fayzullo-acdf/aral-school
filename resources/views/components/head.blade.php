@@ -8,7 +8,8 @@
                         <ul>
                             @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                                 <li>
-                                    <a href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"
+                                    <a rel="alternate" hreflang="{{ $localeCode }}"
+                                        href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"
                                         class="{{ LaravelLocalization::getCurrentLocale() == $properties['locale_url'] ? 'selected' : null }}">
                                         {{ strtoupper($properties['locale_url']) }}</a>
                                 </li>
