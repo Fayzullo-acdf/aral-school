@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('teams', function (Blueprint $table) {
             $table->id();
+            $table->string('category')->nullable()->default('team');
+            $table->enum('col_type', ['chair', 'pair', 'single'])->default('single');
+            $table->string('img');
+            $table->json('name');
+            $table->json('profession');
+            $table->json('member_info');
+            $table->boolean('status')->defaul(true);
+            $table->integer('order')->default(0)->index();
             $table->timestamps();
         });
     }
