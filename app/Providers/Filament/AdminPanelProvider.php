@@ -18,6 +18,8 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Illuminate\Database\Eloquent\Model;
+use AbdulmajeedJamaan\FilamentTranslatableTabs\TranslatableTabs;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -55,5 +57,23 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ]);
+    }
+
+    public function boot()
+    {
+        Model::unguard();
+        TranslatableTabs::configureUsing(function (TranslatableTabs $component) {
+            $component
+                ->localesLabels([
+                    'ru' => 'Russian',
+                    'en' => 'English',
+                    'uz' => 'Uzbek',
+                    'kk' => 'Karakalpak',
+                ])
+                ->locales(['en', 'ru', 'uz', 'kk'])
+                ->addDirectionByLocale()
+                ->addEmptyBadgeWhenAllFieldsAreEmpty(emptyLabel: 'Empty')
+                ->addSetActiveTabThatHasValue();
+        });
     }
 }

@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="{{ LaravelLocalization::getCurrentLocale() }}">
 
 <head>
     @yield('head')
@@ -12,7 +12,7 @@
     </div>
     <div class="overlay">
 
-        <x-head></x-head>
+        <x-head :menus="$menus"></x-head>
 
         @yield('main')
 

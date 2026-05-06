@@ -6,10 +6,13 @@
                     </div>
                     <div class="lang-togglebox">
                         <ul>
-                            <li><a href="#" class="selected">EN</a></li>
-                            <li><a href="#">UZ</a></li>
-                            <li><a href="#">KK</a></li>
-                            <li><a href="#">RU</a></li>
+                            @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                <li>
+                                    <a href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"
+                                        class="{{ LaravelLocalization::getCurrentLocale() == $properties['locale_url'] ? 'selected' : null }}">
+                                        {{ strtoupper($properties['locale_url']) }}</a>
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -25,13 +28,11 @@
                         <div class="navbar-square"></div>
                         <div class="menu">
                             <ul>
-                                <li><a href="#">Aral School</a></li>
-                                <li><a href="#programme-vision">Programme</a></li>
-                                <li><a href="#who-can-apply">Apply</a></li>
-                                <li><a href="#leader-area">Team</a></li>
-                                <li><a href="#FAQ">FAQ</a></li>
-                                <li><a href="#about">About ACDF</a></li>
-                                <li><a href="#">Aral Culture Summit</a></li>
+                                @foreach ($menus as $menu)
+                                    <li>
+                                        <a href="{{ $menu->url }}">{{ $menu->title }}</a>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                         <div class="school">

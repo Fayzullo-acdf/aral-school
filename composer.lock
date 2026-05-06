@@ -4,8 +4,79 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9b8fafe177844164be44cebb8859f11",
+    "content-hash": "777bf480570bc4e3e141389570f10e4f",
     "packages": [
+        {
+            "name": "abdulmajeed-jamaan/filament-translatable-tabs",
+            "version": "v5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Abdulmajeed-Jamaan/filament-translatable-tabs.git",
+                "reference": "a1957257c1dc0afeb326471fb1c7f0eb60bf3715"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Abdulmajeed-Jamaan/filament-translatable-tabs/zipball/a1957257c1dc0afeb326471fb1c7f0eb60bf3715",
+                "reference": "a1957257c1dc0afeb326471fb1c7f0eb60bf3715",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^5.0",
+                "filament/forms": "^5.0",
+                "spatie/laravel-package-tools": "^1.15.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "laravel/pint": "^1.0",
+                "orchestra/testbench": "^9.0",
+                "pestphp/pest": "^3.8"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": [],
+                    "providers": [
+                        "AbdulmajeedJamaan\\FilamentTranslatableTabs\\FilamentTranslatableTabsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AbdulmajeedJamaan\\FilamentTranslatableTabs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abdulmajeed-Jamaan",
+                    "email": "abdulmajeed.jamaan@outlook.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simplifying managing json based translation columns using tabs",
+            "homepage": "https://github.com/abdulmajeed-jamaan/filament-translatable-tabs",
+            "keywords": [
+                "Abdulmajeed-Jamaan",
+                "filament",
+                "filament-translatable-tabs",
+                "laravel",
+                "translation"
+            ],
+            "support": {
+                "issues": "https://github.com/abdulmajeed-jamaan/filament-translatable-tabs/issues",
+                "source": "https://github.com/abdulmajeed-jamaan/filament-translatable-tabs"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Abdulmajeed-Jamaan",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-01-23T12:26:31+00:00"
+        },
         {
             "name": "blade-ui-kit/blade-heroicons",
             "version": "2.7.0",

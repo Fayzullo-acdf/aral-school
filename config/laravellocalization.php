@@ -3,10 +3,10 @@
 return [
 
     'supportedLocales' => [
-        'en'          => ['name' => 'English',                'script' => 'Latn', 'native' => 'English', 'regional' => 'en_GB'],
-        'uz'          => ['name' => 'Uzbek (Latin)',          'script' => 'Latn', 'native' => 'oʼzbekcha', 'regional' => 'uz_UZ'],
-        'kk'          => ['name' => 'Karakalpak',             'script' => 'Cyrl', 'native' => 'Каракалпак тілі', 'regional' => 'kk_KK'],
-        'ru'          => ['name' => 'Russian',                'script' => 'Cyrl', 'native' => 'русский', 'regional' => 'ru_RU']
+        'en'          => ['name' => 'English',                'script' => 'Latn', 'native' => 'English', 'regional' => 'en_GB', 'locale_url' => 'en'],
+        'uz'          => ['name' => 'Uzbek (Latin)',          'script' => 'Latn', 'native' => 'oʼzbekcha', 'regional' => 'uz_UZ', 'locale_url' => 'uz'],
+        'kk'          => ['name' => 'Karakalpak',             'script' => 'Cyrl', 'native' => 'Каракалпак тілі', 'regional' => 'kk_KK', 'locale_url' => 'kk'],
+        'ru'          => ['name' => 'Russian',                'script' => 'Cyrl', 'native' => 'русский', 'regional' => 'ru_RU', 'locale_url' => 'ru']
     ],
 
     // Requires middleware `LaravelSessionRedirect.php`.
