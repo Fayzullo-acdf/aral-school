@@ -778,7 +778,7 @@ html {
 }
 
 .image-card p {
-    padding: 60px;
+    padding: 60px 50px 25px 65px;
     font-size: 16px;
     line-height: 24px;
     font-family: "SeasonSansTRIAL-Medium";
@@ -799,10 +799,13 @@ html {
     height: 158px;
     display: flex;
     align-items: center;
-    padding: 45px 53px 45px 41px;
+}
+
+.title-card p {
     font-size: 30px;
     line-height: 100%;
     font-family: "SeasonSansTRIAL-Regular";
+    padding: 45px 53px 45px 41px;
 }
 
 .number {
@@ -826,6 +829,7 @@ html {
     align-items: flex-end;
     flex-direction: column;
     padding-right: 12px;
+    width: calc(50% - 10px);
 }
 
 #programme-outcomes {
@@ -1962,11 +1966,7 @@ body.mobile-menu-lock {
 
 @media (max-width: 1600px) {
     .theme-card-left {
-        width: 40%;
-    }
-
-    .theme-card-right {
-        width: 40%;
+        padding-left: 50px;
     }
 
     .image-card {

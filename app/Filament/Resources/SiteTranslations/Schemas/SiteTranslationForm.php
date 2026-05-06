@@ -2,8 +2,8 @@
 
 namespace App\Filament\Resources\SiteTranslations\Schemas;
 
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Schema;
 
@@ -20,8 +20,7 @@ class SiteTranslationForm
                 TextInput::make('category')
                     ->trim()
                     ->default(null),
-                Textarea::make('value')
-                    ->trim()
+                RichEditor::make('value')
                     ->required()
                     ->translatableTabs()
                     ->columnSpanFull(),

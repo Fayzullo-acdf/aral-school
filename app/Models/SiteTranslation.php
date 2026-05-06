@@ -24,4 +24,9 @@ class SiteTranslation extends Model
     {
         $query->where('category', 'home');
     }
+
+    public function scopeIsPublished(Builder $query): void
+    {
+        $query->where('is_published', true);
+    }
 }

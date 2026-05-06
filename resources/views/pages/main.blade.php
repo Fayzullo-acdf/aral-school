@@ -18,11 +18,7 @@
                 <div class="hero-box">
                     <div class="hero-text">
                         <p>
-                            <strong>The Aral Sea</strong> is a place where all the most
-                            urgent concerns of today come together. Soil, water, energy,
-                            food, textiles and air quality – it can be seen as the live
-                            laboratory of the future and can help us rethink what's
-                            possible for many generations to come.
+                            {!! $site_translations->hero_text ?? null !!}
                         </p>
                     </div>
                 </div>
@@ -39,11 +35,9 @@
                 </svg>
             </div>
             <div class="intro-info">
-                <p><strong>Aral School</strong></p>
+                <p>{!! $site_translations->intro_title ?? null !!}</p>
                 <p>
-                    We are pleased to announce the Aral School, the new education
-                    programme beginning in 2026, led by Jan Boelen and commissioned by
-                    the Uzbekistan Art and Culture Development Foundation.
+                    {{ strip_tags($site_translations->intro_body ?? null) }}
                 </p>
             </div>
         </div>
@@ -56,8 +50,8 @@
         </div>
         <div class="apply-box">
             <div class="deadline-box">
-                <p>Apply now</p>
-                <p>Deadline 5th of October 2025</p>
+                <p>{{ strip_tags($site_translations->apply_cta ?? null) }}</p>
+                <p>{{ strip_tags($site_translations->apply_deadline ?? null) }}</p>
             </div>
             <svg width="10%" height="1px">
                 <line x1="0" y1="0" x2="100px" y2="0" stroke="black" />
@@ -71,30 +65,7 @@
         </div>
         <div class="climate-description">
             <p>
-                The climate crisis is leaving an indelible mark on our ecosystems
-                and bioregions, forcing us to rethink our interdependencies and
-                alliances. North Uzbekistan and the Karakalpakstan area were once
-                home to the vast Aral Sea, a lake in Central Asia that was for most
-                of the 20th century the world’s fourth largest saline lake. In the
-                last fifty years, the lake has dramatically dried up, with a radical
-                increase in salinisation, primarily due to unsustainable irrigation
-                practices linked to intensive, large-scale cotton cultivation. The
-                consequences have irreversibly altered a bioregion and caused the
-                collapse of an ecosystem, with serious impact on local communities
-                and the region’s ecology, economy, culture, and public health.
-                <br /><br />
-
-                The Aral School is an interdisciplinary postgraduate programme that
-                recognises the unique characteristics of this context, as well as
-                the dramatic consequences of this ecosystem’s collapse. In a lucid
-                approach, the school takes these as the starting point to create new
-                and sustainable visions and prototypes for a shared future. The
-                programme brings together international and local participants from
-                Uzbekistan and Karakalpakstan to explore innovative solutions for
-                cultural and ecological regeneration. Learning from the traditions,
-                biocultural context, and environmental pressure of the
-                Karakalpakstan region, the programme fosters new ways of learning
-                and collaborating across disciplines.
+                {!! html_entity_decode($site_translations->climate_body ?? null) !!}
             </p>
         </div>
     </section>
@@ -103,8 +74,7 @@
         <div class="container">
             <div class="vision-title">
                 <p>
-                    Programme <br />
-                    vision
+                    {!! html_entity_decode($site_translations->programme_title ?? null) !!}
                 </p>
             </div>
             <div class="programme-wrapper">
@@ -112,26 +82,11 @@
                     <img src="./gallery/about_photo.jpg" alt="about image" />
                     <div class="modal">
                         <div class="modal-text">
-                            <p>About</p>
+                            <p>{{ strip_tags($site_translations?->modal_about ?? null) }}</p>
                             <div class="square-shape"></div>
                         </div>
                         <div class="modal-description">
-                            <p>
-                                The Aral school wants to connect a new generation of design
-                                practitioners, and position Uzbekistan as a global
-                                laboratory of the future. Working from the Aral Sea region
-                                context, the initiative promotes regenerative practices,
-                                stimulates new ways of learning and collaborating, and
-                                learns from local know-how, communities and stakeholders.
-                                The postgraduate programme brings together twenty
-                                participants per year, each cohort contributing to create a
-                                growing global community around themes of sustainability and
-                                regeneration. With a yearly programme of events around the
-                                globe, including a presentation at the Milan Design Week
-                                2026 and the Aral Culture Summit later on in October 2026,
-                                the Aral School becomes a global platform for knowledge
-                                exchange on ecological restoration and sustainability.
-                            </p>
+                            {{ strip_tags($site_translations->about_desc ?? null) }}
                         </div>
                     </div>
                 </div>
@@ -139,25 +94,12 @@
                     <img src="./gallery/goals.jpg" alt="goals image" />
                     <div class="modal">
                         <div class="modal-text">
-                            <p>Goals</p>
+                            <p>{{ strip_tags($site_translations->modal_goals ?? null) }}</p>
                             <div class="square-shape"></div>
                         </div>
                         <div class="modal-description">
                             <p>
-                                The Aral school wants to connect a new generation of design
-                                practitioners, and position Uzbekistan as a global
-                                laboratory of the future. Working from the Aral Sea region
-                                context, the initiative promotes regenerative practices,
-                                stimulates new ways of learning and collaborating, and
-                                learns from local know-how, communities and stakeholders.
-                                The postgraduate programme brings together twenty
-                                participants per year, each cohort contributing to create a
-                                growing global community around themes of sustainability and
-                                regeneration. With a yearly programme of events around the
-                                globe, including a presentation at the Milan Design Week
-                                2026 and the Aral Culture Summit later on in October 2026,
-                                the Aral School becomes a global platform for knowledge
-                                exchange on ecological restoration and sustainability.
+                                {{ strip_tags(html_entity_decode($site_translations->goals_desc ?? null)) }}
                             </p>
                         </div>
                     </div>
@@ -169,39 +111,12 @@
                     <img src="./gallery/mission.jpg" alt="mission image" />
                     <div class="modal">
                         <div class="modal-text">
-                            <p>Mission</p>
+                            <p>{{ strip_tags($site_translations->modal_mission ?? null) }}</p>
                             <div class="square-shape"></div>
                         </div>
                         <div class="modal-description">
                             <p>
-                                The Aral school wants to connect a new generation of design
-                                practitioners, and position Uzbekistan as a global
-                                laboratory of the future. Working from the Aral Sea region
-                                context, the initiative promotes regenerative practices,
-                                stimulates new ways of learning and collaborating, and
-                                learns from local know-how, communities and stakeholders.
-                                The postgraduate programme brings together twenty
-                                participants per year, each cohort contributing to create a
-                                growing global community around themes of sustainability and
-                                regeneration. With a yearly programme of events around the
-                                globe, including a presentation at the Milan Design Week
-                                2026 and the Aral Culture Summit later on in October 2026,
-                                the Aral School becomes a global platform for knowledge
-                                exchange on ecological restoration and sustainability. The
-                                Aral school wants to connect a new generation of design
-                                practitioners, and position Uzbekistan as a global
-                                laboratory of the future. Working from the Aral Sea region
-                                context, the initiative promotes regenerative practices,
-                                stimulates new ways of learning and collaborating, and
-                                learns from local know-how, communities and stakeholders.
-                                The postgraduate programme brings together twenty
-                                participants per year, each cohort contributing to create a
-                                growing global community around themes of sustainability and
-                                regeneration. With a yearly programme of events around the
-                                globe, including a presentation at the Milan Design Week
-                                2026 and the Aral Culture Summit later on in October 2026,
-                                the Aral School becomes a global platform for knowledge
-                                exchange on ecological restoration and sustainability.
+                                {{ strip_tags($site_translations->mission_desc ?? null) }}
                             </p>
                         </div>
                     </div>
@@ -219,20 +134,11 @@
         <div class="container">
             <div class="research-theme">
                 <div class="theme-box">
-                    Core research <br />
-                    themes
+                    {!! clean($site_translations->research_title ?? null) !!}
                 </div>
                 <div class="research-description">
                     <p>
-                        The two first themes of the Aral School Pilot examine food and
-                        water. Two interconnected research topics that are influencing
-                        the way we produce and consume food, our livelihood and global
-                        biodiversity. We need to develop and speculate new strategies
-                        and design new systems to prototype possible futures in order to
-                        inspire, building hope. The topics are at the same time our
-                        alibi and point of departure to introduce holistic eco-systemic
-                        projects that would build a new bioregion from molecular to
-                        bioregional scale.
+                        {!! clean($site_translations->research_desc ?? null) !!}
                     </p>
                 </div>
             </div>
@@ -241,17 +147,12 @@
                 <div class="theme-card-left">
                     <div class="image-card">
                         <img src="./gallery/food.png" alt="Food system image" />
-                        <p>
-                            When ecological systems are changing or collapsing,
-                            agriculture needs to adapt. What kind of sustainable food
-                            systems in Karalpakstan and the Aral Sea region at a larger
-                            scale can we develop? New agroecological approach in the city
-                            of Nukus and beyond will be explored and developed, creating a
-                            sustainable framework for a resilient and equitable future.
-                        </p>
+
+                        {!! clean($site_translations->research_food_desc ?? null) !!}
+
                         <div class="number">1</div>
                         <div class="title-card">
-                            The Food System <br />of the Aral region
+                            {!! clean($site_translations->research_food_title ?? null) !!}
                         </div>
                     </div>
                 </div>
@@ -259,21 +160,13 @@
                 <div class="theme-card-right">
                     <div class="image-card">
                         <img src="./gallery/water.png" alt="Aral Water image" />
-                        <p>
-                            In the region where water evaporated by human activities we
-                            want to bring back water in everyday life to increase the
-                            quality of life. As a new benchmark for the water ecosystem,
-                            this theme explores new opportunities, partnerships, tools and
-                            collaborations that will elevate the most precious source of.
-                            Reshaping the future of the region through new water ethics,
-                            and principles of the bioregional design.
-                        </p>
+                        {!! clean($site_translations->research_water_desc ?? null) !!}
                         <div class="number">2</div>
-                        <div class="title-card">Water of the Aral <br />region</div>
+                        <div class="title-card"> {!! clean($site_translations->research_water_title ?? null) !!}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <section id="programme-outcomes">
         <div class="container">

@@ -2,7 +2,8 @@
             <div class="container">
                 <div class="banner">
                     <div class="banner-textbox">
-                        Apply to the Aral School - Deadline 5th of October 2025
+                        {{-- {{ strip_tags($site_translations->banner_text ?? null) }} --}}
+                        {{-- {{ var_dump($site_translations) }} --}}
                     </div>
                     <div class="lang-togglebox">
                         <ul>

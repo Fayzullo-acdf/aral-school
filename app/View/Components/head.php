@@ -9,17 +9,15 @@ use Illuminate\View\Component;
 class head extends Component
 {
     public $menus;
-    /**
-     * Create a new component instance.
-     */
-    public function __construct($menus)
+    public $site_translations;
+
+    public function __construct($menus, $site_translations = [])
     {
         $this->menus = $menus;
+        $this->site_translations = $site_translations;
     }
 
-    /**
-     * Get the view / contents that represent the component.
-     */
+
     public function render(): View|Closure|string
     {
         return view('components.head');

@@ -16,7 +16,7 @@ class PageController extends Controller
     {
         $menus = Menu::visibility()->order()->get();
         $sections = Section::getActiveIds();
-        $site_translations = (object)SiteTranslation::homeTranslations()->get()->pluck('value', 'key')->toArray();
+        $site_translations = (object)SiteTranslation::homeTranslations()->isPublished()->get()->pluck('value', 'key')->toArray();
         $team = Team::team()->active()->sorted()->get();
         $faqs = FAQ::posSort()->sorted()->get();
 
