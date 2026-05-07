@@ -12,7 +12,7 @@
     </div>
     <div class="overlay">
 
-        <x-head :menus="$menus" :site_translations="$site_translations" />
+        <x-header :site_translations="$site_translations" :menus="$menus" />
 
         @yield('main')
 
