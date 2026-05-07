@@ -32,8 +32,8 @@
                 <div class="menu">
                     <ul>
                         @foreach ($menus as $menu)
-                            <li>
-                                <a href="{{ $menu->url }}">{{ $menu->title }}</a>
+                            <li class="open-sans-regular">
+                                <a class="open-sans-regular" href="{{ $menu->url }}">{{ $menu->title }}</a>
                             </li>
                         @endforeach
                     </ul>
