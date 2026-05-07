@@ -4,6 +4,7 @@
                     <div class="banner-textbox">
                         {{-- {{ strip_tags($site_translations->banner_text ?? null) }} --}}
                         {{-- {{ var_dump($site_translations) }} --}}
+                        NULL
                     </div>
                     <div class="lang-togglebox">
                         <ul>

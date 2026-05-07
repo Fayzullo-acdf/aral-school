@@ -18,8 +18,9 @@ class PageController extends Controller
         $sections = Section::getActiveIds();
         $site_translations = (object)SiteTranslation::homeTranslations()->isPublished()->get()->pluck('value', 'key')->toArray();
         $team = Team::team()->active()->sorted()->get();
+        $mentors = Team::mentor()->active()->sorted()->get();
         $faqs = FAQ::posSort()->sorted()->get();
 
-        return view('pages.main', compact('menus', 'sections', 'site_translations', 'team', 'faqs'));
+        return view('pages.main', compact('menus', 'sections', 'site_translations', 'team', 'mentors', 'faqs'));
     }
 }

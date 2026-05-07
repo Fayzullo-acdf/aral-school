@@ -901,7 +901,7 @@ html {
 
 #who-can-apply {
     border-bottom: 1px solid #000;
-    padding-bottom: 0;
+    padding-bottom: 64px;
 }
 
 .apply-theme {
@@ -1013,6 +1013,13 @@ html {
     top: 1012px;
     padding-bottom: 72px;
 }
+.application-box-one img {
+    width: 137px;
+    height: 137px;
+    position: absolute;
+    top: -137px;
+    right: -137px;
+}
 
 .application-box-two img {
     width: 137px;
@@ -1056,10 +1063,13 @@ html {
 }
 
 .application-content p {
-    margin: 160px 130px auto 54px;
     font-size: 16px;
     line-height: 24px;
     font-family: "SeasonSansTRIAL-Medium";
+}
+
+.application-box-three .application-content p {
+    margin: 160px 130px auto 54px;
 }
 
 .application-content ul {
@@ -1072,7 +1082,7 @@ html {
     font-family: "SeasonSansTRIAL-Medium";
 }
 
-.note {
+.application-content-form p:first-child {
     margin: 238px 97px auto 44px;
     font-size: 16px;
     line-height: 24px;
@@ -1081,6 +1091,7 @@ html {
 
 .application-content-form ol {
     margin: 32px 97px auto 64px;
+    text-align: left;
 }
 
 .application-content-form ol li {
@@ -1089,11 +1100,20 @@ html {
     font-family: "SeasonSansTRIAL-Medium";
 }
 
-.application-note {
-    margin: 32px 97px auto 44px;
+.application-content-form ol li p {
+    width: 100%;
+    display: inline;
+}
+
+.application-content-form p:last-child {
+    margin: 32px 97px auto 0;
     font-size: 16px;
     line-height: 24px;
     font-family: "SeasonSansTRIAL-Medium";
+}
+
+.application-content-form p:nth-child(3) {
+    margin-left: 44px;
 }
 
 .apply-square-shape-one {
@@ -1116,6 +1136,7 @@ html {
     align-items: center;
     justify-content: space-between;
     padding-left: 31px;
+    font-family: "SeasonSansTRIAL-Regular";
 }
 
 #leader-area {

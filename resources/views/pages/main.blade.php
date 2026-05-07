@@ -174,10 +174,7 @@
                 <img src="./gallery/Graphic ornament.svg" alt="Graphic ornament" />
             </div>
             <div class="outcome-title">
-                <p>
-                    Programme <br />
-                    outcomes
-                </p>
+                {!! clean($site_translations->outcome_title ?? null) !!}
             </div>
             <div class="outcomes_wrapper">
                 <img class="graphic_ornament_programme_1" src="./gallery/graphic_ornament_programme_1.svg"
@@ -185,31 +182,16 @@
                 <img class="graphic_ornament_programme_2" src="./gallery/graphic_ornament_programme_2.svg"
                     alt="graphic ornament" />
                 <div class="outcome-box">
-                    <p>
-                        Design prototypes connected to the core themes developed within
-                        the research groups.
-                    </p>
+                    {!! clean($site_translations->outcome_box_one ?? null) !!}
                 </div>
                 <div class="outcome-box">
-                    <p>
-                        Media publication capturing the process, key research questions
-                        and prototype solutions will be published within 2026.
-                    </p>
+                    {!! clean($site_translations->outcome_box_two ?? null) !!}
                 </div>
                 <div class="outcome-box">
-                    <p>
-                        First ideas  will be shared with the global creative public
-                        during Milan Design Week 2026 and Aral Culture Summit 2026,
-                        additional cultural outposts for the prototypes exhibition might
-                        also take place.
-                    </p>
+                    {!! clean($site_translations->outcome_box_three ?? null) !!}
                 </div>
                 <div class="outcome-box">
-                    <p>
-                        Key research outcomes and ideas will be shared in an exhibition
-                        and publication during the second Aral Culture Summit in October
-                        2026 as part of the programme.
-                    </p>
+                    {!! clean($site_translations->outcome_box_four ?? null) !!}
                 </div>
             </div>
         </div>
@@ -217,34 +199,20 @@
     <section id="who-can-apply">
         <div class="container">
             <div class="apply-theme">
-                <p>Who can apply</p>
+                {!! clean($site_translations->apply_title ?? null) !!}
             </div>
             <div class="apply-wrapper">
                 <div class="apply-image">
                     <img src="./gallery/apply-image.jpg" alt="Apply image" />
                 </div>
                 <div class="apply-image-description">
-                    <p>
-                        The multidisciplinary programme is aimed at young professionals
-                        from Uzbekistan and abroad with varied backgrounds and work
-                        experience in the fields of architecture, urbanism,
-                        environmental science, biotech, climate studies, filmmaking,
-                        media, crafts, design, computer technologies, social studies,
-                        physical sciences and other fields.
-                        <br /><br />
-                        It is recommended that applicants to the programme have a higher
-                        education diploma (in any specialisation) and no less than 2–3
-                        years of work experience. <br /><br />
-                        When reviewing applications, we focus on how potential
-                        researchers could apply their expertise to the research agenda
-                        of the programme and current theme.
-                    </p>
+                    {!! clean($site_translations->apply_desc ?? null) !!}
                 </div>
             </div>
             <div class="apply-box-2">
                 <div class="deadline-box">
-                    <p>Apply now</p>
-                    <p>Deadline 5th of October 2025</p>
+                    {!! clean($site_translations->apply_cta ?? null) !!}
+                    {!! clean($site_translations->apply_deadline ?? null) !!}
                 </div>
                 <svg width="10%" height="1px">
                     <line x1="0" y1="0" x2="100px" y2="0" stroke="black" />
@@ -253,103 +221,17 @@
                 <div class="apply-square-shape-one"></div>
             </div>
             <div class="application-wrapper">
-                <div class="application-box-one">
-                    <p class="application-title">What is in it for applicants?</p>
-                    <div class="application-number">
-                        <p>1</p>
-                    </div>
-                    <div class="application-content">
-                        <ul>
-                            <li>No tuition fee</li>
-                            <li>
-                                Prototyping, material costs, research trips and
-                                accommodation are included
-                            </li>
-                            <li>Monthly participation stipend</li>
-                            <li>
-                                Visibility and exposure to global and local creative network
-                            </li>
-                            <li>Contact with international experts on a 1-1 basis</li>
-                            <li>
-                                Publication of the cohort developments and outcome in a
-                                respective print format
-                            </li>
-                            <li>
-                                A growing cohort of Aral School alumni, who remain connected
-                                in the future
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="application-box-two">
-                    <p class="application-title">Application Requirements</p>
-                    <div class="application-number">
-                        <p>2</p>
-                    </div>
-                    <div class="application-content">
-                        <ul>
-                            <li>Completed higher education</li>
-                            <li>2–3 years of work experience</li>
-                            <li>Fluency in English</li>
-                            <li>High level of motivation and self-organisation</li>
-                        </ul>
-                    </div>
-                    <img src="./svg/apply-line-two.svg" alt="apply line two" />
-                </div>
-                <div class="application-box-three">
-                    <p class="application-title">Selection Process</p>
-                    <div class="application-number">
-                        <p>3</p>
-                    </div>
-                    <div class="application-content">
-                        <p>
-                            Upon applications and portfolio review, selected candidates
-                            will be invited for a creative interview session to share
-                            their areas of interests and motivations.
-                        </p>
-                    </div>
-                    <img src="./svg/apply-line-three.svg" alt="apply line three" />
-                </div>
-                <div class="application-box-four">
-                    <p class="application-title">Required documents</p>
-                    <div class="application-form">
-                        <p>Completed online application form</p>
-                        <svg width="72px" height="1px">
-                            <line x1="0" y1="0" x2="72px" y2="0" stroke="black" />
-                        </svg>
-                        <div class="square-shape"></div>
-                    </div>
-                    <div class="application-number">
-                        <p>4</p>
-                    </div>
-                    <div class="application-content-form">
-                        <p class="note">
-                            Please submit the following documents together with your
-                            application:
-                        </p>
-                        <ol class="remove-margin">
-                            <li>
-                                CV + Creative Portfolio (PDF, not exceeding a total of 10
-                                pages and 5 projects) - your portfolio should contain
-                                examples of projects and/or research work completed in the
-                                last few years and demonstrate your skills and expertise as
-                                well as interest in the themes of focus of the Aral School.
-                                Please embed any video material within the Portfolio PDF
-                            </li>
-                            <li>Copy of a university diploma </li>
-                            <li>
-                                Motivation letter – please explain in no more than 600 words
-                                why you are interested in the program and how it connects to
-                                your area of research or practice
-                            </li>
-                            <li>Passport photo page scan.  </li>
-                        </ol>
-                        <p class="application-note">
-                            Please note, only fully completed applications as per the list
-                            above will be considered.
-                        </p>
-                    </div>
-                </div>
+                @foreach (['one', 'two', 'three', 'four'] as $step)
+                    @php
+                        $title = $site_translations->{'apply_step_' . $step . '_title'} ?? null;
+                        $text = $site_translations->{'apply_step_' . $step . '_text'} ?? null;
+                        $banner = $site_translations->{'apply_step_' . $step . '_banner'} ?? null;
+                    @endphp
+
+                    <x-application :step="$step" :title="$title" :text="$text" :banner="$banner"
+                        :loop="$loop->iteration" />
+                @endforeach
+
             </div>
         </div>
     </section>
@@ -359,7 +241,7 @@
         </div>
         <div class="container">
             <div class="team-title">
-                <p>The team</p>
+                {!! clean($site_translations->team_title ?? null) !!}
             </div>
             <div class="leader-wrapper">
                 <div class="profile-area">
@@ -367,49 +249,16 @@
                         <div class="profile-box-edge">
                             <img src="./team/Gayane.png" alt="Team lead" />
                         </div>
-                        <p class="leader-name">Gayane Umerova</p>
-                        <p class="leader-title">Project Chair</p>
+                        <p class="leader-name">{{ $team[0]->name }}</p>
+                        <p class="leader-title">{{ $team[0]->profession }}</p>
                     </div>
                 </div>
                 <div class="bio">
                     <div class="team-lead-bio">
-                        <p>
-                            Gayane Umerova is dedicated to developing the culture sector
-                            in Uzbekistan. <br />
-                            <br />Head of the Department of Creative Economy and Tourism
-                            of the Administration of the President of the Republic of
-                            Uzbekistan and Chairperson of the Uzbekistan Art and Culture
-                            Development Foundation (ACDF), Gayane Umerova is at the helm
-                            of building Uzbekistan’s cultural infrastructure. Her efforts
-                            are bringing the nation’s art, artists, and cultural heritage
-                            into the global spotlight. Currently, she is overseeing the
-                            restoration and development of the Centre for Contemporary
-                            Arts in Tashkent, poised to become a new cultural hub for the
-                            region, and is the commissioner of the Bukhara Biennial (5
-                            September - 20 November 2025). She has spearheaded the
-                            inaugural Aral Culture Summit (April 4-6, 2025); is driving
-                            the construction of the new Uzbekistan National Museum
-                            designed by Tadao Ando and is leading the forthcoming 43rd
-                            session of the UNESCO General Conference that will take place
-                            in Samarkand on 30 October - 13 November 2025. She is the
-                            commissioner for the Uzbekistan Pavilion at the Venice
-                            Biennale Arte and Architettura since 2021 as well as for
-                            Uzbekistan’s participation in Expo 2025 Osaka, among other
-                            significant projects.
-                        </p>
+                        {!! clean($team[0]->member_info) !!}
                     </div>
                     <div class="team-lead-bio-right">
-                        <p>
-                            Committed to boosting Uzbekistan’s prominence on the
-                            international culture scene, Umerova serves as the Chairperson
-                            of the National Commission of Uzbekistan on UNESCO Affairs
-                            under the Cabinet of Ministers and in April 2025 has been
-                            awarded France’s Order of Arts and Literature. Her public
-                            service commitment is evident in her dedication to creating
-                            opportunities for young people in Uzbekistan’s cultural sector
-                            and fostering a cultural economy that unites communities and
-                            generations.
-                        </p>
+
                     </div>
                 </div>
             </div>
