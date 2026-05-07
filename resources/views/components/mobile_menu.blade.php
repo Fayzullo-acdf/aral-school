@@ -1,19 +1,25 @@
+@props(['menus'])
+
 <!-- Mobile Menu -->
 <div id="mobile-menu">
-    <ul>
-        <li><a href="#">Aral School</a></li>
-        <li><a href="#programme-vision">Programme</a></li>
-        <li><a href="#who-can-apply">Apply</a></li>
-        <li><a href="#leader-area">Team</a></li>
-        <li><a href="#FAQ">FAQ</a></li>
-        <li><a href="#about">About ACDF</a></li>
-        <li><a href="#">Aral Culture Summit</a></li>
+    <ul class="mobile-menu-list">
+        @foreach ($menus as $menu)
+            <li>
+                <a href="{{ $menu->url }}">{{ $menu->title }}</a>
+            </li>
+        @endforeach
     </ul>
 
     <div class="mobile-lang-togglebox">
-        <a href="#" type="button" id="en" class="selected">EN</a>
-        <a href="#" type="button" id="uz">UZ</a>
-        <a href="#" type="button" id="kk">KK</a>
-        <a href="#" type="button" id="ru">RU</a>
+        <ul>
+            @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                <li>
+                    <a rel="alternate" hreflang="{{ $localeCode }}"
+                        href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"
+                        class="{{ LaravelLocalization::getCurrentLocale() == $properties['locale_url'] ? 'selected' : null }}">
+                        {{ strtoupper($properties['locale_url']) }}</a>
+                </li>
+            @endforeach
+        </ul>
     </div>
 </div>

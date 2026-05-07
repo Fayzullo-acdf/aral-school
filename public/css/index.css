@@ -165,6 +165,16 @@ html {
     flex-wrap: wrap;
 }
 
+.mobile-lang-togglebox ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+
+.mobile-lang-togglebox ul li a {
+    font-size: 16px;
+}
+
 .lang-togglebox ul li:not(:last-child) {
     margin-right: 35px;
 }
@@ -2335,13 +2345,17 @@ body.mobile-menu-lock {
         list-style: none;
     }
 
+    #mobile-menu ul a {
+        text-decoration: none;
+        color: #000;
+        font-family: "SeasonSansTRIAL-Regular";
+    }
+
     #mobile-menu li:not(:last-child) {
         margin-bottom: 18px;
     }
 
-    #mobile-menu ul li a {
-        color: #000;
-        font-family: "SeasonSansTRIAL-Regular";
+    .mobile-menu-list {
         font-size: 30px;
         line-height: normal;
         text-decoration: none;
@@ -2357,11 +2371,11 @@ body.mobile-menu-lock {
     }
 
     .mobile-lang-togglebox a {
-        font-size: 16px;
-        text-decoration: none;
+        /* text-decoration: none;
         color: #000;
-        font-family: "SeasonSansTRIAL-Regular";
+        font-family: "SeasonSansTRIAL-Regular"; */
         margin-right: 32px;
+        font-size: 12px;
     }
 
     .square {
