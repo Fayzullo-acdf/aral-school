@@ -16,7 +16,7 @@
 
         @yield('main')
 
-        <x-footer></x-footer>
+        <x-footer :site_translations="$site_translations"></x-footer>
 
         <x-mobile_menu></x-mobile_menu>
     </div>

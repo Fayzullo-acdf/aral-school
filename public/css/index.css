@@ -1256,6 +1256,7 @@ html {
     font-size: 40px;
     line-height: 44px;
     font-family: "SeasonMix-Regular";
+    text-transform: uppercase;
 }
 
 .leader-title {
@@ -1351,6 +1352,7 @@ html {
     font-size: 40px;
     line-height: 44px;
     font-family: "SeasonMix-Regular";
+    text-transform: uppercase;
 }
 
 .rest-member-position {
@@ -1481,7 +1483,8 @@ html {
     font-weight: 420;
     line-height: 44px;
     margin: 20px auto;
-    padding-left: 0;
+    max-width: 300px;
+    padding: 0;
     text-align: left;
     width: 336px;
 }
