@@ -15,6 +15,6 @@ class Section extends Model
 
     public static function getActiveIds(): array
     {
-        return self::where('status', true)->pluck('section_id')->toArray();
+        return self::where('status', true)->pluck('category')->toArray();
     }
 }
