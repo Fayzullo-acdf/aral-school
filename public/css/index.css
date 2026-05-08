@@ -988,7 +988,7 @@ html {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 148px;
+    margin-top: 220px;
     position: relative;
 }
 
@@ -1989,6 +1989,12 @@ body.mobile-menu-lock {
     .intro-info {
         font-size: 28px;
     }
+    .application-box-one img,
+    .application-box-two img,
+    .application-box-three img {
+        display: none;
+    }
+
     .about-box {
         padding-left: 85px;
         padding-right: 40px;
@@ -2192,14 +2198,6 @@ body.mobile-menu-lock {
         right: 50%;
         transform: translate(50%);
         top: 1200px;
-    }
-
-    .application-box-two img {
-        display: none;
-    }
-
-    .application-box-three img {
-        display: none;
     }
 
     .profile-box {

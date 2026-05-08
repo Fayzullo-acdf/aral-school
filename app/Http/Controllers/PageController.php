@@ -23,4 +23,14 @@ class PageController extends Controller
 
         return view('pages.main', compact('menus', 'sections', 'site_translations', 'team', 'mentors', 'faqs'));
     }
+
+    public function test()
+    {
+        $menus = Menu::visibility()->order()->get();
+        $site_translations = (object)SiteTranslation::homeTranslations()->isPublished()->get()->pluck('value', 'key')->toArray();
+
+
+
+        return view('pages.test', compact('menus', 'site_translations'));
+    }
 }

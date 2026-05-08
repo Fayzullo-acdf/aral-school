@@ -24,9 +24,10 @@ class TeamsTable
                 TextColumn::make('name')
                     ->label('Full name')
                     ->searchable(),
-                TextColumn::make('col_type')
-                    ->label('Column type')
-                    ->badge(),
+                TextColumn::make('category')
+                    ->label('Category')
+                    ->badge()
+                    ->searchable(),
                 TextColumn::make('order')
                     ->label('Order'),
                 ToggleColumn::make('status')
