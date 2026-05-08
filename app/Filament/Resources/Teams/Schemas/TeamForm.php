@@ -32,8 +32,9 @@ class TeamForm
                 TextInput::make('category')
                     ->trim(),
                 Select::make('col_type')
-                    ->options(['chair' => 'Chair', 'pair' => 'Pair', 'single' => 'Single'])
-                    ->default('single'),
+                    ->options(['chair' => 'Chair', 'single' => 'Single'])
+                    ->default('single')
+                    ->live(),
                 TextInput::make('name')
                     ->trim()
                     ->label('Full name')
@@ -50,6 +51,12 @@ class TeamForm
                     ->label('Member info')
                     ->required()
                     ->translatableTabs()
+                    ->columnSpanFull(),
+                Textarea::make('additional_column')
+                    ->trim()
+                    ->label('Additional column (available only if Col type is chair)')
+                    ->translatableTabs()
+                    ->disabled(fn($get) => $get('col_type') !== 'chair')
                     ->columnSpanFull(),
                 Toggle::make('status')
                     ->required()

@@ -18,11 +18,12 @@ class Team extends Model
         'profession',
         'img',
         'member_info',
+        'additional_column',
         'status',
         'order',
     ];
 
-    public $translatable = ['member_info', 'profession', 'name'];
+    public $translatable = ['member_info', 'additional_column', 'profession', 'name'];
 
     public function scopeSorted(Builder $query): void
     {

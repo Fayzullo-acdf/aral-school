@@ -262,7 +262,7 @@
                         {!! clean($team[0]->member_info) !!}
                     </div>
                     <div class="team-lead-bio-right">
-
+                        {!! clean($team[0]->additional_column) !!}
                     </div>
                 </div>
             </div>
