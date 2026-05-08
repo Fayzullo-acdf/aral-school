@@ -1505,6 +1505,7 @@ html {
     padding: 0;
     text-align: left;
     width: 336px;
+    text-transform: uppercase;
 }
 
 .mentors_content {
@@ -1924,7 +1925,7 @@ html {
 .privacy {
     position: absolute;
     left: 551px;
-    top: 229px;
+    top: 192px;
     width: fit-content;
     grid-column: 4/5;
     z-index: 2;
