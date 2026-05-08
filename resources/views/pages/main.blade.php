@@ -276,6 +276,11 @@
                             <div class="team-member-bio-1">
                                 {!! clean($member->member_info ?? null) !!}
                             </div>
+                            @if ($member->col_type === 'chair')
+                                <div class="team-member-bio-1 additional">
+                                    {!! clean($member->additional_column ?? null) !!}
+                                </div>
+                            @endif
                         </div>
                     @endforeach
                 </div>

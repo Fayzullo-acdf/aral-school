@@ -1322,10 +1322,21 @@ html {
 }
 
 .chair {
-    width: 50%;
+    width: 75%;
     margin-left: 25%;
     padding-bottom: 110px;
     position: relative;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.chair .member-image-box,
+.chair .team-member-bio-1 {
+    width: calc((100% - 40px) / 3);
+}
+
+.chair .member-image-box {
+    margin-left: 20px;
 }
 
 .pair {
@@ -3036,6 +3047,7 @@ body.mobile-menu-lock {
             width: 100%;
         }
 
+        .chair .member-image-box,
         .chair .team-member-bio-1 {
             width: 100%;
         }
