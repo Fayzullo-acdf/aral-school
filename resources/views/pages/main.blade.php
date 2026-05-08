@@ -271,7 +271,8 @@
                                     <img src="storage/{{ $member->img }}" alt="{{ $member->name }}" />
                                 </div>
                                 <p class="leader-name">{{ strip_tags(clean($member->name ?? null)) }}</p>
-                                <p class="leader-title">{{ strip_tags(clean($member->profession ?? null)) }}</p>
+                                <p class="leader-title">
+                                    {{ strip_tags(html_entity_decode(clean($member->profession ?? null))) }}</p>
                             </div>
                             <div class="team-member-bio-1">
                                 {!! clean($member->member_info ?? null) !!}
