@@ -6,10 +6,6 @@
     <title>{!! strip_tags(clean($site_translations->site_title ?? null)) !!}</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="icon" type="image/png" href="./gallery/favicon-16x16.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
 @endsection
 
 @section('main')
