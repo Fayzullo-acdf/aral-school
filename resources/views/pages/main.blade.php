@@ -254,8 +254,8 @@
         </section>
     @endif
 
-    @if (in_array('leader-area', $sections))
-        <section id="leader-area">
+    @if (in_array('team', $sections))
+        <section id="team">
             <div class="profile-ornament">
                 <img src="./svg/profile-ornament.svg" alt="Profile ornament" />
             </div>
@@ -263,77 +263,26 @@
                 <div class="team-title">
                     {!! clean($site_translations->team_title ?? null) !!}
                 </div>
-                <div class="leader-wrapper">
-                    <div class="profile-area">
-                        <div class="profile-box">
-                            <div class="profile-box-edge">
-                                <img src="storage/{{ $team[0]->img }}" alt="Team lead" />
-                            </div>
-                            <p class="leader-name">{{ $team[0]->name }}</p>
-                            <p class="leader-title">{{ $team[0]->profession }}</p>
-                        </div>
-                    </div>
-                    <div class="bio">
-                        <div class="team-lead-bio">
-                            {!! clean($team[0]->member_info) !!}
-                        </div>
-                        <div class="team-lead-bio-right">
-                            {!! clean($team[0]->additional_column) !!}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="team-ornament">
-                <img src="./svg/team-ornament.svg" alt="team ornament" />
-            </div>
-        </section>
-    @endif
-
-    @if (in_array('team', $sections))
-        <section id="team">
-            <div class="container">
-                <div class="teambox">
-                    @for ($i = 1; $i < 3; $i++)
-                        <div class="member-box">
+                <div class="team-wrapper">
+                    @foreach ($team as $member)
+                        <div class="{{ 'member-box ' . $member->col_type }}">
                             <div class="member-image-box">
                                 <div class="profile-box-edge">
-                                    <img src="storage/{{ $team[$i]->img }}"
-                                        alt="{{ strip_tags(clean($team[$i]->name ?? null)) }}" />
+                                    <img src="storage/{{ $member->img }}" alt="{{ $member->name }}" />
                                 </div>
-                                <p class="leader-name">{{ strip_tags(clean($team[$i]->name ?? null)) }}</p>
-                                <p class="leader-title">{{ strip_tags(clean($team[$i]->profession ?? null)) }}</p>
+                                <p class="leader-name">{{ strip_tags(clean($member->name ?? null)) }}</p>
+                                <p class="leader-title">{{ strip_tags(clean($member->profession ?? null)) }}</p>
                             </div>
                             <div class="team-member-bio-1">
-                                {!! clean($team[$i]->member_info ?? null) !!}
+                                {!! clean($member->member_info ?? null) !!}
                             </div>
                         </div>
-                    @endfor
+                    @endforeach
                 </div>
             </div>
-        </section>
-    @endif
-
-    @if (in_array('rest-members', $sections))
-        <section id="rest-members">
-            <div class="container">
-                <div class="rest-memebers-wrapper">
-                    @for ($i = 3; $i < 7; $i++)
-                        <div class="rest-memberbox">
-                            <div class="rest-member-imageCard">
-                                <div class="profile-box-edge">
-                                    <img src="storage/{{ $team[$i]->img ?? null }}"
-                                        alt="{{ clean($team[$i]->name ?? null) }}" />
-                                </div>
-                                <div class="rest-member-name">{!! clean($team[$i]->name ?? null) !!}</div>
-                                <div class="rest-member-position">{!! clean($team[$i]->profession ?? null) !!}</div>
-                            </div>
-                            <div class="rest-member-description">
-                                {!! clean($team[$i]->member_info ?? null) !!}
-                            </div>
-                        </div>
-                    @endfor
-                </div>
-            </div>
+            {{-- <div class="team-ornament">
+                <img src="./svg/team-ornament.svg" alt="team ornament" />
+            </div> --}}
         </section>
     @endif
 

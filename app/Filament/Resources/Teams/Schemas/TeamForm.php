@@ -32,7 +32,7 @@ class TeamForm
                 TextInput::make('category')
                     ->trim(),
                 Select::make('col_type')
-                    ->options(['chair' => 'Chair', 'single' => 'Single'])
+                    ->options(['chair' => 'Chair', 'pair' => 'Pair', 'single' => 'Single'])
                     ->default('single')
                     ->live(),
                 TextInput::make('name')

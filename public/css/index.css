@@ -1087,7 +1087,7 @@ html {
 }
 
 .application-box-three .application-content p {
-    margin: 160px 130px auto 54px;
+    margin: 160px 50px auto 54px;
 }
 
 .application-content ul {
@@ -1157,12 +1157,6 @@ html {
     font-family: "SeasonSansTRIAL-Regular", sans-serif;
 }
 
-#leader-area {
-    position: relative;
-    border-bottom: 1px solid #000;
-    padding-bottom: 60px;
-}
-
 .team-ornament {
     position: absolute;
     bottom: -10px;
@@ -1200,7 +1194,7 @@ html {
     background-color: #000;
 }
 
-.leader-wrapper {
+.team-wrapper {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -1306,7 +1300,9 @@ html {
 }
 
 #team {
-    padding-top: 50px;
+    position: relative;
+    border-bottom: 1px solid #000;
+    padding-bottom: 60px;
     padding-bottom: 50px;
 }
 
@@ -1325,11 +1321,32 @@ html {
     line-height: 24px;
 }
 
-.member-box {
+.chair {
+    width: 50%;
+    margin-left: 25%;
+    padding-bottom: 110px;
+    position: relative;
+}
+
+.pair {
     width: calc(50% - 10px);
+}
+
+.single {
+    width: calc(25% - 15px);
+    flex-direction: column;
+}
+
+.single .member-image-box,
+.single .team-member-bio-1 {
+    width: 100%;
+}
+
+.member-box {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .member-image-box {
@@ -2601,9 +2618,18 @@ body.mobile-menu-lock {
         left: -20px;
     }
 
-    .leader-wrapper {
+    .team-wrapper {
         padding-bottom: 60px;
         margin-bottom: 40px;
+    }
+
+    .chair {
+        margin-left: 0;
+    }
+
+    .single {
+        width: calc(50% - 10px);
+        flex-direction: row;
     }
 
     .profile-box {
@@ -2976,11 +3002,7 @@ body.mobile-menu-lock {
 
         .application-content ul,
         ol {
-            margin: 160px 10px auto 34px;
-        }
-
-        .application-content p {
-            margin: 160px 10px auto 34px;
+            margin: 160px 10px auto 64px;
         }
 
         #leader-area {
@@ -2989,7 +3011,7 @@ body.mobile-menu-lock {
             background-color: #fcf4eb;
         }
 
-        .leader-wrapper {
+        .team-wrapper {
             display: block;
             margin: 0;
         }
@@ -3011,6 +3033,10 @@ body.mobile-menu-lock {
         }
 
         .team-member-bio-1 {
+            width: 100%;
+        }
+
+        .chair .team-member-bio-1 {
             width: 100%;
         }
 
@@ -3142,7 +3168,7 @@ body.mobile-menu-lock {
             margin: 32px 44px;
         }
 
-        .leader-wrapper {
+        .team-wrapper {
             display: flex;
             padding: 32px 0;
         }
