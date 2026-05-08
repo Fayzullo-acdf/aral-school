@@ -13,14 +13,6 @@ html {
     overflow-x: hidden;
 }
 
-.open-sans-regular {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-}
-
 @font-face {
     font-family: "SeasonSansTRIAL-Bold";
     src:
@@ -693,28 +685,6 @@ html {
     object-fit: cover;
 }
 
-.mission-text {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 298px;
-    height: 90px;
-    background-color: #fff;
-    padding: 31px 0 31 31px;
-}
-
-.mission-text p {
-    font-size: 22px;
-    font-family: "SeasonSansTRIAL-Medium", sans-serif;
-}
-
-.mission-text div {
-    background-color: #f96243;
-}
-
 .programme-image-two {
     position: absolute;
     width: 346px;
@@ -1203,16 +1173,6 @@ html {
     margin-top: 60px;
 }
 
-.profile-area {
-    width: calc(50% - 10px);
-}
-
-.profile-box {
-    margin-left: auto;
-    padding: 0 12px;
-    max-width: 336px;
-}
-
 .profile-box-edge {
     position: relative;
     width: 100%;
@@ -1241,29 +1201,6 @@ html {
     background-size: 100% 100%;
 }
 
-.bio {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: calc(50% - 10px);
-    padding-bottom: 50px;
-}
-
-.profile-line {
-    position: absolute;
-    z-index: 1;
-}
-
-.profile-desc {
-    margin: 17px auto;
-}
-
-.profile-desc p:nth-child(3) {
-    font-family: "SeasonSansTRIAL-Medium", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-}
-
 .leader-name {
     font-size: 40px;
     line-height: 44px;
@@ -1283,34 +1220,11 @@ html {
     left: calc(25% - 10px);
 }
 
-.team-lead-bio {
-    padding: 0 10px;
-    width: calc(50% - 10px);
-    font-size: 16px;
-    line-height: 24px;
-    font-family: "SeasonSansTRIAL-Medium", sans-serif;
-}
-
-.team-lead-bio-right {
-    width: calc(50% - 10px);
-    padding: 0 10px;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: "SeasonSansTRIAL-Medium", sans-serif;
-}
-
 #team {
     position: relative;
     border-bottom: 1px solid #000;
     padding-bottom: 60px;
     padding-bottom: 50px;
-}
-
-.teambox {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    position: relative;
 }
 
 .team-member-bio-1 {
@@ -1367,52 +1281,6 @@ html {
     flex-direction: column;
     padding: 0 12px;
     margin: 0 auto;
-}
-
-#rest-members {
-    border-top: 1px solid #000;
-    padding: 30px 0;
-}
-
-.rest-memebers-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.rest-memberbox {
-    width: calc(25% - 15px);
-}
-
-.rest-member-imageCard {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 336px;
-    padding: 0 10px;
-    margin: 0 auto 34px;
-}
-
-.rest-member-name {
-    font-size: 40px;
-    line-height: 44px;
-    font-family: "SeasonMix-Regular", sans-serif;
-    text-transform: uppercase;
-}
-
-.rest-member-position {
-    font-size: 22px;
-    line-height: 44px;
-    font-family: "SeasonSansTRIAL-Medium", sans-serif;
-    font-weight: 550;
-}
-
-.rest-member-description {
-    padding: 0 10px;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: "SeasonSansTRIAL-Medium", sans-serif;
 }
 
 #mentors {
@@ -1562,13 +1430,6 @@ html {
     position: absolute;
     width: 100%;
     top: 285px;
-    left: 0;
-}
-
-.absolute-2 {
-    position: absolute;
-    width: 100%;
-    top: 1288px;
     left: 0;
 }
 
@@ -1974,9 +1835,7 @@ html {
 #research > *,
 #programme-outcomes > *,
 #who-can-apply > *,
-#leader-area > *,
 #team > *,
-#rest-members > *,
 #mentors > *,
 #about > *,
 #footer > * {
@@ -2228,10 +2087,6 @@ body.mobile-menu-lock {
         top: 1200px;
     }
 
-    .profile-box {
-        max-width: 49%;
-    }
-
     .team-ornament,
     .profile-ornament {
         display: none;
@@ -2357,8 +2212,7 @@ body.mobile-menu-lock {
         padding: 40px 30px 80px 55px;
     }
 
-    #navbar.mobile-menu-open #mobile-menu,
-    #navbar.mobile-menu-open.scrolled #mobile-menu {
+    #navbar.mobile-menu-open #mobile-menu {
         background: rgba(252, 244, 235, 0.42);
         backdrop-filter: blur(40px) saturate(140%);
         -webkit-backdrop-filter: blur(40px) saturate(140%);
@@ -2643,22 +2497,6 @@ body.mobile-menu-lock {
         flex-direction: row;
     }
 
-    .profile-box {
-        max-width: 100%;
-    }
-
-    .bio {
-        display: block;
-    }
-
-    .team-lead-bio,
-    .team-lead-bio-right {
-        width: 100%;
-    }
-    .teambox {
-        display: block;
-    }
-
     .member-box {
         width: 100%;
         padding: 50px 0;
@@ -2684,24 +2522,6 @@ body.mobile-menu-lock {
 
     .chair .additional {
         margin-left: calc(50% + 10px);
-    }
-
-    .rest-memberbox {
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 40px;
-    }
-
-    .rest-member-imageCard {
-        width: calc(50% - 10px);
-        max-width: 100%;
-    }
-
-    .rest-member-description {
-        width: calc(50% - 10px);
     }
 
     .mentor-header {
@@ -3051,23 +2871,9 @@ body.mobile-menu-lock {
             margin: 160px 10px auto 64px;
         }
 
-        #leader-area {
-            position: relative;
-            z-index: 0;
-            background-color: #fcf4eb;
-        }
-
         .team-wrapper {
             display: block;
             margin: 0;
-        }
-
-        .profile-area {
-            width: 100%;
-        }
-
-        .bio {
-            width: 100%;
         }
 
         .member-box {
@@ -3087,26 +2893,13 @@ body.mobile-menu-lock {
             width: 100%;
         }
 
-        #team,
-        #rest-members {
+        #team {
             background-color: #fcf4eb;
             position: relative;
             z-index: 0;
             padding: 0;
         }
 
-        .rest-memebers-wrapper {
-            padding: 40px 0;
-        }
-
-        .rest-memberbox {
-            display: block;
-        }
-
-        .rest-member-imageCard,
-        .rest-member-description {
-            width: 100%;
-        }
         #mentors {
             position: relative;
             z-index: 0;
@@ -3204,14 +2997,6 @@ body.mobile-menu-lock {
         }
 
         .application-content-form ol {
-            margin: 32px 44px;
-        }
-
-        .note {
-            margin: 238px 44px auto 44px;
-        }
-
-        .application-note {
             margin: 32px 44px;
         }
 
