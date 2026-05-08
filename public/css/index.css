@@ -2668,6 +2668,24 @@ body.mobile-menu-lock {
         max-width: 100%;
     }
 
+    .chair {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .chair .member-image-box {
+        margin: 0;
+    }
+
+    .chair .member-image-box,
+    .chair .team-member-bio-1 {
+        width: calc(50% - 10px);
+    }
+
+    .chair .additional {
+        margin-left: calc(50% + 10px);
+    }
+
     .rest-memberbox {
         width: 100%;
         display: flex;
@@ -2974,6 +2992,23 @@ body.mobile-menu-lock {
 
     #footer .bottom-layer::after {
         height: 12.7vw;
+    }
+
+    @media (max-width: 786px) {
+        .chair {
+            width: 100%;
+            display: block;
+            gap: 0;
+        }
+
+        .chair .member-image-box,
+        .chair .team-member-bio-1 {
+            width: 100%;
+        }
+
+        .chair .additional {
+            margin-left: 0;
+        }
     }
 
     @media (max-width: 768px) {
