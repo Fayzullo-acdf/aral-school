@@ -163,7 +163,7 @@
 
                             <div class="number">1</div>
                             <div class="title-card">
-                                {!! clean($site_translations->research_food_title ?? null) !!}
+                                {!! strip_tags(clean($site_translations->research_food_title ?? null)) !!}
                             </div>
                         </div>
                     </div>
@@ -195,18 +195,16 @@
                         alt="graphic ornament" />
                     <img class="graphic_ornament_programme_2" src="./gallery/graphic_ornament_programme_2.svg"
                         alt="graphic ornament" />
-                    <div class="outcome-box">
-                        {!! clean($site_translations->outcome_box_one ?? null) !!}
-                    </div>
-                    <div class="outcome-box">
-                        {!! clean($site_translations->outcome_box_two ?? null) !!}
-                    </div>
-                    <div class="outcome-box">
-                        {!! clean($site_translations->outcome_box_three ?? null) !!}
-                    </div>
-                    <div class="outcome-box">
-                        {!! clean($site_translations->outcome_box_four ?? null) !!}
-                    </div>
+                    @foreach (['one', 'two', 'three', 'four'] as $step)
+                        @php
+                            $outcome_text = "outcome_box_{$step}";
+                        @endphp
+                        @if ($content = $site_translations->$outcome_text ?? null)
+                            <div class="outcome-box">
+                                {!! clean($content) !!}
+                            </div>
+                        @endif
+                    @endforeach
                 </div>
             </div>
         </section>
