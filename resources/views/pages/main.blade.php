@@ -157,24 +157,28 @@
                 <div class="research-wrapper">
                     <div class="theme-card-left">
                         <div class="image-card">
-                            <img src="./gallery/food.png" alt="Food system image" />
+                            <div class="image-box">
+                                <img src="./gallery/food.png" alt="Food system image" />
+                                <div class="title-card">
+                                    {!! strip_tags(clean($site_translations->research_food_title ?? null)) !!}
+                                </div>
+                            </div>
 
                             {!! clean($site_translations->research_food_desc ?? null) !!}
-
                             <div class="number">1</div>
-                            <div class="title-card">
-                                {!! strip_tags(clean($site_translations->research_food_title ?? null)) !!}
-                            </div>
                         </div>
                     </div>
 
                     <div class="theme-card-right">
                         <div class="image-card">
-                            <img src="./gallery/water.png" alt="Aral Water image" />
+                            <div class="image-box">
+                                <img src="./gallery/water.png" alt="Aral Water image" />
+                                <div class="title-card"> {!! strip_tags(clean($site_translations->research_water_title ?? null)) !!}
+                                </div>
+                            </div>
+
                             {!! clean($site_translations->research_water_desc ?? null) !!}
                             <div class="number">2</div>
-                            <div class="title-card"> {!! clean($site_translations->research_water_title ?? null) !!}
-                            </div>
                         </div>
                     </div>
                 </div>

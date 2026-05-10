@@ -765,6 +765,10 @@ html {
     position: relative;
 }
 
+.image-box {
+    position: relative;
+}
+
 .image-card p {
     padding: 60px 50px 25px 65px;
     font-size: 16px;
@@ -780,16 +784,14 @@ html {
 
 .title-card {
     position: absolute;
-    top: 230px;
-    left: -102px;
+    left: -95px;
+    bottom: 0;
     background-color: #f96243;
     width: 345px;
     height: 158px;
     display: flex;
     align-items: center;
-}
-
-.title-card p {
+    font-family: "SeasonSansTRIAL-Regular";
     font-size: 30px;
     line-height: 100%;
     font-family: "SeasonSansTRIAL-Regular", sans-serif;
@@ -2439,11 +2441,6 @@ body.mobile-menu-lock {
         align-items: center;
     }
 
-    .title-card {
-        bottom: 50px;
-        left: 0;
-    }
-
     .theme-card-right {
         width: 100%;
         align-items: center;
@@ -2868,12 +2865,18 @@ body.mobile-menu-lock {
 
         .application-content ul,
         ol {
-            margin: 160px 10px auto 64px;
+            margin: 160px 10px auto 34px;
         }
 
         .team-wrapper {
             display: block;
             margin: 0;
+        }
+
+        .single,
+        .pair,
+        .chair {
+            padding: 0 10px;
         }
 
         .member-box {
@@ -2886,6 +2889,7 @@ body.mobile-menu-lock {
 
         .team-member-bio-1 {
             width: 100%;
+            padding: 0;
         }
 
         .chair .member-image-box,
@@ -2961,9 +2965,8 @@ body.mobile-menu-lock {
         .title-card {
             font-size: 18px;
             width: 90%;
-            height: fit-content;
             padding: 20px 40px;
-            top: 312px;
+            height: auto;
         }
 
         .image-card p {
