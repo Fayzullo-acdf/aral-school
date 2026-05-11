@@ -283,14 +283,15 @@
                                 <div class="team-member-bio-1 additional">
                                     {!! clean($member->additional_column ?? null) !!}
                                 </div>
+                                <div class="team-ornament">
+                                    <img src="./svg/team-ornament.svg" alt="team ornament" />
+                                </div>
                             @endif
                         </div>
                     @endforeach
                 </div>
             </div>
-            {{-- <div class="team-ornament">
-                <img src="./svg/team-ornament.svg" alt="team ornament" />
-            </div> --}}
+
         </section>
     @endif
 

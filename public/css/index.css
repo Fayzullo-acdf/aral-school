@@ -1238,12 +1238,22 @@ html {
 }
 
 .chair {
-    width: 75%;
-    margin-left: 25%;
+    width: 100%;
+    padding-left: 25%;
     padding-bottom: 110px;
     position: relative;
     gap: 20px;
     justify-content: flex-start;
+}
+
+.chair::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 50px);
+    height: 1px;
+    background-color: #000;
+    bottom: 0;
+    left: -20px;
 }
 
 .chair .member-image-box,
@@ -1257,7 +1267,19 @@ html {
 
 .pair {
     width: calc(50% - 10px);
+    position: relative;
 }
+
+/* .pair::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
 
 .single {
     width: calc(25% - 15px);
