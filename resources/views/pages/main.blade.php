@@ -266,6 +266,9 @@
                     {!! clean($site_translations->team_title ?? null) !!}
                 </div>
                 <div class="team-wrapper">
+                    @php
+                        $pairRowCount = 0;
+                    @endphp
                     @foreach ($team as $member)
                         <div class="{{ 'member-box ' . $member->col_type }}">
                             <div class="member-image-box">
@@ -288,6 +291,23 @@
                                 </div>
                             @endif
                         </div>
+                        @if ($member->col_type === 'pair')
+                            @php
+                                $pairRowCount++;
+                                $nextMember = $team->get($loop->index + 1);
+                                $isPairRowEnd = $pairRowCount === 2 || !$nextMember || $nextMember->col_type !== 'pair';
+                            @endphp
+                            @if ($isPairRowEnd)
+                                <div class="team-pair-divider" aria-hidden="true"></div>
+                                @php
+                                    $pairRowCount = 0;
+                                @endphp
+                            @endif
+                        @else
+                            @php
+                                $pairRowCount = 0;
+                            @endphp
+                        @endif
                     @endforeach
                 </div>
             </div>
