@@ -1229,7 +1229,7 @@ html {
     padding-bottom: 50px;
 }
 
-.team-member-bio-1 {
+.team-member-bio {
     width: calc(50% - 10px);
     padding: 0 10px;
     font-family: "SeasonSansTRIAL-Medium", sans-serif;
@@ -1257,7 +1257,7 @@ html {
 }
 
 .chair .member-image-box,
-.chair .team-member-bio-1 {
+.chair .team-member-bio {
     width: calc((100% - 40px) / 3);
 }
 
@@ -1284,7 +1284,7 @@ html {
 }
 
 .single .member-image-box,
-.single .team-member-bio-1 {
+.single .team-member-bio {
     width: 100%;
 }
 
@@ -2532,7 +2532,7 @@ body.mobile-menu-lock {
     }
 
     .chair .member-image-box,
-    .chair .team-member-bio-1 {
+    .chair .team-member-bio {
         width: calc(50% - 10px);
     }
 
@@ -2838,7 +2838,7 @@ body.mobile-menu-lock {
         }
 
         .chair .member-image-box,
-        .chair .team-member-bio-1 {
+        .chair .team-member-bio {
             width: 100%;
         }
 
@@ -2906,17 +2906,17 @@ body.mobile-menu-lock {
             width: 100%;
         }
 
-        .team-member-bio-1 {
+        .team-member-bio {
             width: 100%;
             padding: 0;
         }
 
         .chair .member-image-box,
-        .chair .team-member-bio-1 {
+        .chair .team-member-bio {
             width: 100%;
         }
 
-        .chair .team-member-bio-1 {
+        .chair .team-member-bio {
             padding-bottom: 50px;
         }
 

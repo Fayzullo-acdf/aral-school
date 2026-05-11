@@ -279,11 +279,11 @@
                                 <p class="leader-title">
                                     {{ strip_tags(html_entity_decode(clean($member->profession ?? null))) }}</p>
                             </div>
-                            <div class="team-member-bio-1">
+                            <div class="team-member-bio">
                                 {!! clean($member->member_info ?? null) !!}
                             </div>
                             @if ($member->col_type === 'chair')
-                                <div class="team-member-bio-1 additional">
+                                <div class="team-member-bio additional">
                                     {!! clean($member->additional_column ?? null) !!}
                                 </div>
                                 <div class="team-ornament">
